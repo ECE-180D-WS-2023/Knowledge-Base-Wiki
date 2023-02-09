@@ -6,7 +6,10 @@
 
 This tutorial will present how OpenCV and MediaPipe can be used to recognize different poses done with a body and face.
 
-![Screenshot 2023-02-08 at 6.26.04 PM.png](Pose%20Recognition%20using%20OpenCV%20and%20MediaPipe%2070f5c8af2066438087986513bdbc2588/Screenshot_2023-02-08_at_6.26.04_PM.png)
+
+<p align="center">
+<img width="598" alt="Screenshot_2023-02-08_at_6 26 04_PM" src="https://user-images.githubusercontent.com/74027562/217741279-d4e9a89b-67f3-435b-ada3-f5353d0f856e.png">
+</p>
 
 # Steps to Follow
 
@@ -391,12 +394,17 @@ The function outputs all three classes (in my case “Happy”, “Sad”, and �
 
 This is the final result:
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74027562/217741351-ac93e9ee-f1a7-46fb-9e54-1198b328ec5c.gif" alt="animated" />
+</p>
+
+
 **********************References:**********************
 
-[OpenCV: Introduction to OpenCV-Python Tutorials](https://docs.opencv.org/4.x/d0/de3/tutorial_py_intro.html)
+[OpenCV](https://docs.opencv.org/4.x/d0/de3/tutorial_py_intro.html)
 
-[Home](https://google.github.io/mediapipe/)
+[MediaPipe](https://google.github.io/mediapipe/)
 
-[https://www.youtube.com/watch?v=We1uB79Ci-w](https://www.youtube.com/watch?v=We1uB79Ci-w)
+[AI Body Language Decoder with MediaPipe and Python in 90 Minutes by Nicholas Renotte](https://www.youtube.com/watch?v=We1uB79Ci-w)
 
-[https://www.youtube.com/watch?v=doDUihpj6ro&t=6050s](https://www.youtube.com/watch?v=doDUihpj6ro&t=6050s)
+[Sign Language Detection using Action Recognition with Python | LSTM Deep Learning Model by Nicholas Renotte](https://www.youtube.com/watch?v=doDUihpj6ro&t=6050s)
