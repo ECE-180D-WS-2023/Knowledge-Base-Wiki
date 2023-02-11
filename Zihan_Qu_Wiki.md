@@ -131,7 +131,7 @@ B = read(f, "B");
 imshow(Y);
 ```
 <p align="center">
-    <img src="../Images/blurry_image.png"
+    <img src="/Images/blurry_image.png"
     width="50%" height="50%">
     <figcaption> Fig.1 blurry image Y</figcaption>
 </p>
@@ -162,7 +162,7 @@ for i=-6:2:0
 end
 ```
 <p align="center">
-    <img src="../Images/nonblurry_image.png" 
+    <img src="/Images/nonblurry_image.png" 
     width="80%" height="80%">
     <figcaption> Fig.2 Deblurred images </figcaption>
 </p>
