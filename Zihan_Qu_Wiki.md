@@ -10,12 +10,16 @@ This is an introductory article designed to introduce readers with some basic pr
 * An interesting Application
 * Conclusion
 
+***
+
 ## Preliminaries
 
 Before we start, you need to review some fundamental concepts that we will use later on.
 
 * Basic Linear Algebra
 * Least Squares
+
+***
 
 ## Multi-objective least squares
 
@@ -55,6 +59,8 @@ We can see that in the final form, it looks exactly like a least squares problem
 Hence the solution to the above least squares problem can be derived from a single-objective least squares problem.
 
 $$\hat{x} = (\lambda_1A_1^TA_1+...+\lambda_kA_k^TA_k)^{-1}(\lambda_1A_1^Tb_1+...+\lambda_kA_k^Tb_k)$$
+
+***
 
 ## Regularized data fitting
 
