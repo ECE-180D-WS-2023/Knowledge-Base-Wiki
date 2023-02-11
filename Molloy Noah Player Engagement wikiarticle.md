@@ -18,7 +18,7 @@ objectives given to the player by the game.
 
 Developing a game with a focus on player engagement starts in the deisgn of the gameplay loop. Developers should carefully consider
 what experiences they have to offer to the player. There are a variety of things developers can give players to pursue during their 
-time with the game. These pursuits can be categorized into two fields, intrinsic objectives and extrinsic objectives[2]. 
+time with the game. These pursuits can be categorized into two fields, intrinsic objectives and extrinsic objectives[^2]. 
 Intrinsic objectives are player-imposed objectives that offer no direct in-game benefit. Extrinsic objectives are goals set by the 
 game for the player to attempt to achieve. For example, how a player might build a house in the popular game Minecraft is an 
 intrinsic objective. Players can fashion their house to whatever style they may like or might not feel the need to build a house 
@@ -38,7 +38,7 @@ are a few core metrics that should be recorded and acted on.
 
 Contrary to what intuitively seems to make the most sense, players winning in a game too much may end up less engaged than other 
 players. While it's obvious that players that are constantly losing will want to stop playing, players that continue to win may 
-end up feeling unsatisfied with the game[1]. They might feel that they have already mastered the mechanics of the game and 
+end up feeling unsatisfied with the game[^1]. They might feel that they have already mastered the mechanics of the game and 
 that there is no reason to invest their time to improve at the game.
 
 In a scenario where players participate in a game set where the outcome can either be a win, draw, or loss, the most likely 
@@ -52,7 +52,7 @@ continue to play versus the two wins one loss case.
 ### Fixed Random Chance
 
 During gameplay, random events with set probabilities can have the likeliness of certain events occurring modified in such a 
-way to drive up player satisfaction[3]. With real-time analytics, a game can recognize that a player has had a string of bad luck 
+way to drive up player satisfaction[^3]. With real-time analytics, a game can recognize that a player has had a string of bad luck 
 or experienced multiple consecutive losses outside or within their control. The game can then act upon that trend of negative 
 experiences by forcing the probability of a positive event occurring to keep the player interested in the game. This can take 
 form in things like random loot chests found in the game world that might contain rare equipment or a random chance of a 
@@ -64,6 +64,6 @@ a rare item, the game might show that the chance of obtaining a rare item has in
 the player to continue to engagae with the game so that they can try to find an additional source of loot and have an improved
 chance of obtaining the rare item.  
 
-[1] https://web.cs.ucla.edu/~yzsun/papers/WWW17Chen_EOMM
-[2] http://www.digra.org/wp-content/uploads/digital-library/11307.06025.pdf
-[3] https://opensiuc.lib.siu.edu/cgi/viewcontent.cgi?article=1395&context=gs_rp
+[^1] https://web.cs.ucla.edu/~yzsun/papers/WWW17Chen_EOMM
+[^2] http://www.digra.org/wp-content/uploads/digital-library/11307.06025.pdf
+[^3] https://opensiuc.lib.siu.edu/cgi/viewcontent.cgi?article=1395&context=gs_rp
