@@ -64,6 +64,6 @@ a rare item, the game might show that the chance of obtaining a rare item has in
 the player to continue to engagae with the game so that they can try to find an additional source of loot and have an improved
 chance of obtaining the rare item.  
 
-[^1] https://web.cs.ucla.edu/~yzsun/papers/WWW17Chen_EOMM
-[^2] http://www.digra.org/wp-content/uploads/digital-library/11307.06025.pdf
-[^3] https://opensiuc.lib.siu.edu/cgi/viewcontent.cgi?article=1395&context=gs_rp
+[^1]: https://web.cs.ucla.edu/~yzsun/papers/WWW17Chen_EOMM
+[^2]: http://www.digra.org/wp-content/uploads/digital-library/11307.06025.pdf
+[^3]: https://opensiuc.lib.siu.edu/cgi/viewcontent.cgi?article=1395&context=gs_rp
