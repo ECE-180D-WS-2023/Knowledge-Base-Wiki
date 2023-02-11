@@ -8,11 +8,11 @@ You CAN do this!
 
 ## What is CAN
 
-Controller Area Network or CAN is a network technology primarily used in embedded systems that provide fast communication amongst microcontrollers while being cost-effective. Notably, a network can function as a series of nodes and operate without a host computer [[1](https://github.com/warrenwallis/180DA-WarmUp/edit/main/misc/wiki-article-first-draft.md#links)]. 
+Controller Area Network or CAN is a network technology primarily used in embedded systems that provide fast communication amongst microcontrollers while being cost-effective. Notably, a network can function as a series of nodes and operate without a host computer [[1](https://github.com/ECE-180D-WS-2023/Knowledge-Base-Wiki/blob/main/can-protocol_warren-pagsuguiron.md#links)]. 
 
 *Ok, but what does that mean!?* It means that there isn't a central computer delegating tasks and controlling how messages are sent or received. Like some cryptocurrencies, a CAN bus is a decentralized network that is able to send messages efficiently across its network.
 
-Some characteristics of CAN [[2](https://github.com/warrenwallis/180DA-WarmUp/edit/main/misc/wiki-article-first-draft.md#links)]:
+Some characteristics of CAN [[2](https://github.com/ECE-180D-WS-2023/Knowledge-Base-Wiki/blob/main/can-protocol_warren-pagsuguiron.md#links)]:
 - ~~preserving foods~~
 - needs only two wires to communicate
 - operates at data rates up to 1 Mb/s
@@ -26,7 +26,7 @@ Some industries of where CAN is used:
 - manufacturing
 - elevators and escalators (where I use it for my job :nail_care:)
 
-Similar technologies to CAN [[4](https://github.com/warrenwallis/180DA-WarmUp/edit/main/misc/wiki-article-first-draft.md#links)]:
+Similar technologies to CAN [[4](https://github.com/ECE-180D-WS-2023/Knowledge-Base-Wiki/blob/main/can-protocol_warren-pagsuguiron.md#links)]:
 - ~~electric can-opener~~
 - ethernet w/ TCP/IP (expensive :thumbsdown:)
 - FPD-link
@@ -37,15 +37,15 @@ Similar technologies to CAN [[4](https://github.com/warrenwallis/180DA-WarmUp/ed
 
 As mentioned earlier, a network using CAN only needs two wires to operate:
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/66290894/218182132-b87afaed-96fc-472a-818d-404dfaf79e87.png"> [[1](https://github.com/warrenwallis/180DA-WarmUp/edit/main/misc/wiki-article-first-draft.md#links)]
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/66290894/218182132-b87afaed-96fc-472a-818d-404dfaf79e87.png"> [[1](https://github.com/ECE-180D-WS-2023/Knowledge-Base-Wiki/blob/main/can-protocol_warren-pagsuguiron.md#links)]
 
 This significantly reduces the wires needed to connect the network, and is why it was and still is popular in the automobile industry. The motivation behind the CAN protocol was to reduce costs by reducing the use of copper wire:
 
-![image](https://user-images.githubusercontent.com/66290894/218182038-5c71639b-a748-4b06-8a9f-f547c59a5874.png) [[2](https://github.com/warrenwallis/180DA-WarmUp/edit/main/misc/wiki-article-first-draft.md#links)]
+![image](https://user-images.githubusercontent.com/66290894/218182038-5c71639b-a748-4b06-8a9f-f547c59a5874.png) [[2](https://github.com/ECE-180D-WS-2023/Knowledge-Base-Wiki/blob/main/can-protocol_warren-pagsuguiron.md#links)]
 
 We can break down a node into three parts:
 
-<img width="770" alt="image" src="https://user-images.githubusercontent.com/66290894/218181390-546e2749-774b-40f2-89ee-fbb928902026.png"> [[1](https://github.com/warrenwallis/180DA-WarmUp/edit/main/misc/wiki-article-first-draft.md#links)]
+<img width="770" alt="image" src="https://user-images.githubusercontent.com/66290894/218181390-546e2749-774b-40f2-89ee-fbb928902026.png"> [[1](https://github.com/ECE-180D-WS-2023/Knowledge-Base-Wiki/blob/main/can-protocol_warren-pagsuguiron.md#links)]
 
 1. Microprocessor
    <p>
@@ -59,7 +59,7 @@ We can break down a node into three parts:
    <p>
       The tranceiver converts the data from the bus to a format that the CAN controller can understand. It also converts the message from the controller to a format the bus accepts. 
    </p>
-[[1](https://github.com/warrenwallis/180DA-WarmUp/edit/main/misc/wiki-article-first-draft.md#links)]
+[[1](https://github.com/ECE-180D-WS-2023/Knowledge-Base-Wiki/blob/main/can-protocol_warren-pagsuguiron.md#links)]
 
 ### Software Principles
 
@@ -73,7 +73,7 @@ Really, all we need to focus on as users are:
       There exists two different standards for the protocol: Standard CAN and Extended CAN.
    
       Standard CAN has a message ID of 11 bits, therefore, we can have 2<sup>11</sup> or 2048 different identifiers from 0 to 2047.
-      Extended CAN has a message ID of 29 bits, therefore, we can have 2<sup>29</sup> or 536(ish) million identifiers from 0 to 536870911 [[3](https://github.com/warrenwallis/180DA-WarmUp/edit/main/misc/wiki-article-first-draft.md#links)].
+      Extended CAN has a message ID of 29 bits, therefore, we can have 2<sup>29</sup> or 536(ish) million identifiers from 0 to 536870911 [[3](https://github.com/ECE-180D-WS-2023/Knowledge-Base-Wiki/blob/main/can-protocol_warren-pagsuguiron.md#links)].
    
       Pretty crazy huh? And as programmers we can even design how we want to use these messages. Do we potentially want 536 million different nodes? Do we want to have 536 million different types of messages we can send? The skies the limit or really 2<sup>29</sup>, but you get what I mean.
    </p>
