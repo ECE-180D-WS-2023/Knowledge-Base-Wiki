@@ -1,4 +1,4 @@
-#Player Engagement
+# Player Engagement
 
 **Player engagement** (sometimes called **player retention, player churn, player attrition, or player turnover**) is
 a measure of how players positively or negatively experience a game. High amounts of player engagement translates to
@@ -8,13 +8,13 @@ and an overall negative gameplay experience.
 The most popular games are marked by their ability to capture players' attention. Long and frequent play sessions are characteristic
 of games with good player engagement. 
 
-##Engagement Methods
+## Engagement Methods
 
 There are several ways to provide players with an engaging experience. These center around the idea that players want to experience
 some aspect of a game, usually chasing some sort of goal. These goals can be fairly abstract or more concrete with clearly communicated
 objectives given to the player by the game. 
 
-###Goals
+### Goals
 
 Developing a game with a focus on player engagement starts in the deisgn of the gameplay loop. Developers should carefully consider
 what experiences they have to offer to the player. There are a variety of things developers can give players to pursue during their 
@@ -27,14 +27,14 @@ the player to do. In either case, the player is actively pursuing some kind of g
 from playing the game.
 
 
-###Real-time Analytics
+### Real-time Analytics
 After core gameplay elements are developed and in-place, it may be difficult to optimize player engagement if a certain strategy 
 did not yield the desired results. Player engagement may be restored by the use of real-time analytics to fine tune parameters in 
 specific engagement scenarios. When attempting to integrate real-time analytics, it is essential to establish which metrics are 
 important and what weight should be assigned to each category. While every game is different in how they are structured, there 
 are a few core metrics that should be recorded and acted on. 
 
-###Win/Success Rate
+### Win/Success Rate
 
 Contrary to what intuitively seems to make the most sense, players winning in a game too much may end up less engaged than other 
 players. While it's obvious that players that are constantly losing will want to stop playing, players that continue to win may 
@@ -49,7 +49,7 @@ outcomes to least likely cause a player to stop playing are combinations of wins
 is either a win or a draw. Infact, a player who experienced two consecutive losses and an ending win is actually more likely to 
 continue to play versus the two wins one loss case.
 
-###Fixed Random Chance
+### Fixed Random Chance
 
 During gameplay, random events with set probabilities can have the likeliness of certain events occurring modified in such a 
 way to drive up player satisfaction[3]. With real-time analytics, a game can recognize that a player has had a string of bad luck 
