@@ -9,9 +9,12 @@ If you've ever wanted to learn how to create animations like the ones in his
 videos, you're in the right place! In this article, we'll be looking at Manim, a
 python animation library that we can use to make animations like this:
 
-| ![3b1b Signal Decomposition](Images/3b1b-example.gif) |
-|:--:|
-| [*3b1b Signal Decomposition*](https://youtu.be/spUNpyF58BY?t=131) |
+<p align="center">
+  <img src="images/3b1b-example.gif" />
+</p>
+<p align="center">
+  <a href="https://youtu.be/spUNpyF58BY?t=131"><em>3b1b Signal Decomposition</em></a>
+</p>
 
 By the end of this article, you will have learned the building blocks that you
 need to be able to build fancy animations like this on your own. Without further
