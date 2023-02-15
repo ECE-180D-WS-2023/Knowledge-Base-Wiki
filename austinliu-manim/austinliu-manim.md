@@ -1,4 +1,6 @@
 # Using Manim to Create Animations Programmatically
+**Austin Liu**
+
 Have you ever watched a youtube video about math with cool animations and wonder
 how on earth it was made? If your answer is yes, there's a good chance that
 video was by 3blue1brown. If you don't know who or what that is, 3blue1brown is
