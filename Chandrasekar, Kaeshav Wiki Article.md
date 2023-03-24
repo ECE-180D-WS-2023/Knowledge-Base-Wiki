@@ -17,44 +17,55 @@ a.	Arduino programming cable
 ## Getting Started
 Our first goal is to get started with the Bluetooth module and communicate between the Arduino and the computer. Let us begin by physically connecting the Arduino to the computer through this port with the cable that comes with the kit:
  
+![image](https://user-images.githubusercontent.com/63273284/227655103-8c6e75ab-e506-43a9-88cd-3eb2cb7b476a.png)
 
-Next, we want to install the Arduino IDE so we can program the Arduino Uno. Follow this link to install the IDE: Software | Arduino
+Next, we want to install the Arduino IDE so we can program the Arduino Uno. Follow this link to install the IDE: https://www.arduino.cc/en/software/
 
 Once installed, open the development environment and select the Arduino Uno as the primary board. 
  
+![image](https://user-images.githubusercontent.com/63273284/227655216-3b23f6aa-0e00-4b30-83d7-46d4ef940d6b.png)
 
 If the Arduino is properly connected to the computer, the option to select it as the COM port of choice will be available. For example, it should look like this:
+ 
+![image](https://user-images.githubusercontent.com/63273284/227655237-0a3db7e6-e0a8-4c21-8fff-a3af0a71e132.png)
  
 Select the COM port that has the Arduino/Genuino Uno listed next to it. Now, the computer knows to send and receive data from the Arduino through this physical port. 
 
 
 We will now test if the Arduino is properly functioning with the example code available in the IDE. One of the benefits of using the Arduino development environment is the built-in example codes that are provided to test some basic and advanced functionality of the Arduino. Navigate to the top bar and select the “Blink” code file under “Basics”:
  
+![image](https://user-images.githubusercontent.com/63273284/227655257-917494c4-a171-4bd7-af25-2f0319952bd5.png)
+ 
 Select this code example and the following should appear:
+ 
+![image](https://user-images.githubusercontent.com/63273284/227655272-f58fdea9-2001-4ce7-85b6-2fd46587c96e.png)
  
 To upload this code to the Arduino that is currently plugged in, click on the forward arrow in the top bar:
  
+![image](https://user-images.githubusercontent.com/63273284/227655282-b6e4ab69-4956-4d47-84b7-5ff29dd84d1d.png)
+ 
 The progress on the compilation and upload should appear towards the bottom of the page:
  
+![image](https://user-images.githubusercontent.com/63273284/227655296-7aca8d0f-0eab-424d-985b-d30ca59ebd11.png)
+
 After this, the LED on the Arduino should start blinking repeatedly on for one second, then off for one second. If this works properly, then the Arduino is perfectly ready to be used for the rest of our project. 
 
 
 
-Bluetooth Module 
+## Bluetooth Module 
 The next step in our journey to measuring acceleration is setting up the Bluetooth module. Prepare the prototyping shield with tiny breadboard, jumper wires, and Arduino. 
 Place the shield on top of the Arduino, snapping it into place such that the orientation is like so:
  
-
-
-
+![image](https://user-images.githubusercontent.com/63273284/227655321-51f6ed62-be37-4618-af84-0181397d90a0.png)
 
 Use the jumper wires to connect the Bluetooth module as follows:
  
+![image](https://user-images.githubusercontent.com/63273284/227655349-02898207-fd43-493a-afd2-c67f94c668f9.png)
 
 Once this is properly connected, the red LED on the Bluetooth module should begin blinking. This means that the module is ready to be paired with the computer. Open your computer’s Bluetooth pairing setting and the default name of the device “HC-06” should appear. The password for pairing to this device is “1234”. After it is paired, the red LED should become a solid red light. 
 At this point, we can upload the following Bluetooth test code to make sure that the module is working as expected. 
  
-
+![image](https://user-images.githubusercontent.com/63273284/227655400-5de1ac65-399d-4849-85c2-e1be721e24f7.png)
 
 The output of this test should be the following:
 
