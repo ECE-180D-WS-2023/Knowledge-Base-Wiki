@@ -1,6 +1,6 @@
 # Using the Ultrasonic Sensor and Bluetooth Module on an Arduino to Measure Acceleration
 
-### Final Word Count: 2055
+#### Final Word Count: 2055
 
 ## Introduction
 
