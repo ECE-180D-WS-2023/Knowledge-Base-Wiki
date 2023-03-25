@@ -17,7 +17,7 @@ a.	Arduino programming cable
 5.	Arduino Prototyping Shield with Tiny Breadboard
 6.	Computer with Bluetooth capability
 7.	4x AA Battery Pack
-8.	Spool of thin string
+8.	2 ft of thin string
 
 	
  
@@ -213,13 +213,119 @@ Now that the ultrasonic sensor and Bluetooth code has been uploaded, disconnect 
 
 *Figure 13*
 
-The first number in each row is the time in milliseconds since the program began running, and the second number is the calibrated sensor output in centimeters. By moving the ultrasonic sensor back and forth, the second reading should change, and the first reading should increment by 1 each millisecond. If this output has been obtained, then the hardware setup is successful!
+The first number in each row is the time in milliseconds since the program began running, and the second number is the calibrated sensor output in centimeters. By moving the ultrasonic sensor back and forth, the second reading should change, and the first reading should increment by 1 each millisecond. If this output has been obtained, then the hardware setup is successful.
 
 ## Final Experiment
-In order to measure the acceleration of the setup, we will carefully drop the Arduino apparatus to measure the acceleration of Earth's gravity. Tie a rope around the Arduino apparatus such that it can be suspended with the ultrasonic sensor facing downard 
+In order to measure the acceleration of the setup, we will carefully drop the Arduino apparatus to measure the acceleration of Earth's gravity. Tie a string around the Arduino apparatus such that it can be suspended with the ultrasonic sensor facing downard. The amount of remaining string that can be held should be approximately one foot in length. 
+
+Open the serial monitor with the Bluetooth module connected to the computer for data acquisition, as delineated in previous steps. Once the data is being read, note the starting and ending milliseconds from the serial monitor. Hold onto the end of the string and the Arduino apparatus, and drop the apparatus with the ultrasonic sensor facing downard for the whole drop. Note the starting and ending milliseconds from the serial monitor. Stop the autoscrolling on the serial monitor by unchecking the box in the bottom left corner of the monitor, as seen in Figure 14. 
+
+![image](https://user-images.githubusercontent.com/63273284/227700630-a684f1c8-4499-471b-a43e-c7f879f2f5e2.png)
+
+*Figure 14*
+
+Copy and paste the relevant data points from the starting and ending time points into a .txt file and save it to your Google Drive. 
 
 ## Data Analysis
-*insert data analysis steps*
+Create a Google Collaboratory Notebook by following the steps shown in Figure 15. 
+
+![image](https://user-images.githubusercontent.com/63273284/227700833-a7c4c2b2-781e-48c1-80f6-26a69ef6f699.png)
+
+*Figure 15*
+
+Paste the following code into your notebook and change the default file name to the file name of your .txt file which should be uploaded to your personal drive. 
+
+```Python
+
+import numpy as np
+import scipy.optimize as sp
+import matplotlib.pyplot as plt
+from google.colab import drive
+drive.mount('drive')
+
+read_in_array = np.loadtxt('/content/drive/My Drive/DEFAULT_FILE_NAME.txt',delimiter=';')
+
+# The zeroth column is the x axis, and the first column is y axis
+# Take all of the elements in the 0th column to create your x-axis array
+time_millis = read_in_array[:,0]
+# The x_axis data is the elapsed time in milliseconds
+
+# Take all of the elements in the 1st column to create your y-axis array
+dist_cm = read_in_array[:,1]
+# The y_axis data is the distance in cm.
+
+
+#Time from ms to s
+time_s = time_millis/1000
+
+#Distance from cm to m
+dist_m=dist_cm/100
+
+
+#Plot the data to see what is going on
+plt.scatter(time_s,dist_m)
+
+# Add axes labels
+plt.xlabel("Time (s)")
+plt.ylabel("Distance (m)")
+plt.title("Time vs Distance Scatterplot")
+
+# Create a variable that starts from 0 and ends at the size of the array
+array_index=np.arange(0,len(dist_m))
+
+#Adjust until the parabolic section is within these indices
+lower_index = 0
+upper_index = 100
+
+lower_time_limit = time_millis[lower_index]
+upper_time_limit = time_millis[upper_index]
+
+# Create new arrays for the time window and distance window that we care about
+time_window = time_s[lower_index:upper_index]
+dist_window = dist_m[lower_index:upper_index]
+
+plt.plot(time_window, dist_window)
+
+# Add axes labels
+plt.xlabel("Time (s)")
+plt.ylabel("Distance (m)")
+plt.title("Time vs Distance Plot with Cutoff Indices")
+
+
+
+
+
+#Fit a polynomial of degree 2 to the curve
+coeff_quad = np.polyfit(time_window, dist_window, 2)
+y_fit=coeff_quad[0]*time_window**2+coeff_quad[1]*time_window+coeff_quad[2]
+
+plt.plot(time_window,y_fit, label = 'Model')
+plt.scatter(time_window, dist_window, label = 'Data')
+plt.legend()
+
+# Your x and y axes labels here
+plt.xlabel("Time (s)")
+plt.ylabel("Distance (m)")
+
+#Title 
+plt.title("Time vs Distance Plot")
+
+
+
+#Finally, we extract the acceleration from the fitted, second-degree polynomial
+print("The acceleration due to gravity is: " + str(coeff_quad[0]) + " m/s^2")
+
+
+```
+
+Note: Allow permission for the notebook to mount your Google Drive. 
+
+Run the code by pressing the button on the left of the cell, pictured in Figure 16. 
+
+![image](https://user-images.githubusercontent.com/63273284/227700964-3a3a7b19-78ac-41a9-b6ab-5f4b5b1834e0.png)
+
+*Figure 16*
+
 
 ## Conclusion
 *insert conclusion* 
