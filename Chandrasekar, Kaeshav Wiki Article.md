@@ -110,7 +110,7 @@ Now that the ultrasonic sensor and Bluetooth code has been uploaded, disconnect 
 The first number in each row is the time in milliseconds since the program began running, and the second number is the calibrated sensor output in centimeters. If this output has been obtained, then the hardware setup is successful!
 
 ## Final Experiment
-In order to measure the acceleration of the setup, we will drop the Arduino apparatus to measure 
+In order to measure the acceleration of the setup, we will drop the Arduino apparatus to measure the acceleration of Earth's gravity. 
 face the ultrasonic sensor downward and drop it from a safe height such that 
 
 ## Data Analysis
