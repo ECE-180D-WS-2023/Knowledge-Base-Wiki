@@ -12,6 +12,7 @@ a.	Arduino programming cable
 4.	Jumper wires
 5.	Arduino Prototyping Shield with Tiny Breadboard
 6.	Computer with Bluetooth capability
+7.      4x AA Battery pack
 	
  
 ## Getting Started
@@ -53,7 +54,7 @@ After this, the LED on the Arduino should start blinking repeatedly on for one s
 
 
 ## Bluetooth Module 
-The next step in our journey to measuring acceleration is setting up the Bluetooth module. Prepare the prototyping shield with tiny breadboard, jumper wires, and Arduino. 
+The next step in our journey to measuring acceleration is setting up the Bluetooth module. Prepare the prototyping shield with tiny breadboard, jumper wires, battery pack, and Arduino. 
 Place the shield on top of the Arduino, snapping it into place such that the orientation is like so:
  
 ![image](https://user-images.githubusercontent.com/63273284/227655321-51f6ed62-be37-4618-af84-0181397d90a0.png)
@@ -63,21 +64,35 @@ Use the jumper wires to connect the Bluetooth module as follows:
 ![image](https://user-images.githubusercontent.com/63273284/227655349-02898207-fd43-493a-afd2-c67f94c668f9.png)
 
 Once this is properly connected, the red LED on the Bluetooth module should begin blinking. This means that the module is ready to be paired with the computer. Open your computer’s Bluetooth pairing setting and the default name of the device “HC-06” should appear. The password for pairing to this device is “1234”. After it is paired, the red LED should become a solid red light. 
-At this point, we can upload the following Bluetooth test code to make sure that the module is working as expected. 
+A successful Bluetooth connection will show the Bluetooth LED as a solid red. At this point, we can upload the following Bluetooth test code to make sure that the module is working as expected. 
  
 ![image](https://user-images.githubusercontent.com/63273284/227655400-5de1ac65-399d-4849-85c2-e1be721e24f7.png)
 
-The output of this test should be the following:
+Once this code is uploaded to the Arduino, disconnect the Arduino from the computer and connect the battery pack to the Arduino as follows:
+*insert photo*
 
-*Insert Output*
+After connecting, the Bluetooth LED should begin blinking again. Follow the aforementioned steps to connect the Bluetooth module to the computer. Once the Bluetooth LED is solid red, open the serial monitor for the appropriate COM port for the Bluetooth connection. This can be found through trial and error of the various COM ports available in the following drop-down menu:
+*insert photo* 
+
+The output on the serial monitor should be:
+*insert photo*
 
 The initial setup of the Bluetooth module will be tricky; however it is crucial to this project, so ensure that this step is fully complete before moving onto the subsequent steps. 
 
 ## Ultrasonic Sensor
-*insert ultrasonic sensor testing plan*
+The ultrasonic sensor is how we will be measuring the acceleration of the Arduino apparatus. The output of the ultrasonic sensor is the distance away from a target in front of it after including a calibration factor. The ultrasonic sensor should be electrically connected to the Arduino as follows:
+*insert image*
+
+After connecting the sensor's echo and trig pins to ports 3 and 2 respectively, we must implement the data reading and output to the serial monitor through the Bluetooth module. The following code should be uploaded to the Arduino to implement the ultrasonic sensor readings to the serial monitor:
+*insert code screenshot*
+
+Connect the Arduino to the computer and upload the code above. 
 
 ## Sending Ultrasonic Sensor Data via Bluetooth
-*insert integration and test of the previous two sections*
+Now that the ultrasonic sensor and Bluetooth code has been uploaded, disconnect the Arduino from the computer and connect the battery pack to the Arduino. Once again pair the Bluetooth module to the computer as mentioned in earlier steps. Open the serial monitor after choosing the correct COM port. The serial monitor should read the distance values from the ultrasonic sensor in the following format:
+*insert photo*
+
+If this output has been obtained, then the hardware setup is successful!
 
 ## Final Experiment Setup
 *insert test plan about the final experiment using the setup from the previous section + data collection*
