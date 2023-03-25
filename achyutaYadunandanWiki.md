@@ -8,13 +8,15 @@ As part of the Bruin Racing EV Supermileage Club, I designed a custom BLDC (brus
 
 drive the BLDC motors that make up our powertrain. BLDC motors have 3 phases that are driven, with 3
 
-hall sensors that can be used for sensing potion feedback. The BLDC motor controller we designed
+hall sensors that can be used for sensing potion feedback. They are used in many industrial and consumer applications. 
 
-controls the 3 phases using a trapezoidal control algorithm. This wiki serves to provide a technical
+On specific industry is robotic actuators, where there is a desire for high performance motors with precise control.
 
-explanation of this, focusing on the trapezoidal control process with high level connections to the
+The BLDC motor controller we designed controls the 3 phases using a trapezoidal control algorithm. 
 
-controller.
+This wiki serves to provide a technical explanation of this, focusing on the trapezoidal control process 
+
+with high level connections to the controller.
 
 # Commutation Explanation
 
@@ -159,6 +161,17 @@ reduced switching time / reducing switching loss.
 3. Gate drivers can offer shoot-through protection by preventing both the high-side and low-side
 
 MOSFETs from being on at the same time.
+
+
+Overall, BLDC motors are a good choice in high precision, high power applications.
+
+This document summarizes their control - specifically the trapezoidal control scheme. 
+
+Other control approaches include FOC (field oriented control) or sinusoidal control. 
+
+They are more difficult to implement from a software / hardware perspective, but offer the benefits of being more efficient.
+
+This document also summarizes the high level operating principle, involving the inverter FETs as well as the gate drivers.
 
 
 
