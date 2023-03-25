@@ -127,7 +127,7 @@ After connecting, the Bluetooth LED should begin blinking again. Follow the afor
 
 The serial monitor can be opened after selecting the COM port under the "Tools" tab. The output on the serial monitor after connecting to the Bluetooth module should contain the following string: "Hello, SoftwareSerial ready". 
 
-The initial setup of the Bluetooth module will be tricky; however it is crucial to this project, so ensure that this step is fully complete before moving onto the subsequent steps. EXPLAIN WHY TRICKY
+The initial setup of the Bluetooth module will be tricky due to connectivity issues, but these can be resolved through simple troubleshoooting and restarting. It is crucial to this project, so ensure that this step is fully complete before moving onto the subsequent steps. 
 
 ## Ultrasonic Sensor
 The ultrasonic sensor is how we will be measuring the acceleration of the Arduino apparatus. The output of the ultrasonic sensor is the distance away from a target in front of it after including a calibration factor. The ultrasonic sensor should be electrically connected to the Arduino as seen in Figure 12.
