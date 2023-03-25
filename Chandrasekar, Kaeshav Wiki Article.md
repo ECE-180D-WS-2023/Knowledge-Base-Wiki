@@ -94,11 +94,32 @@ A successful Bluetooth connection will show the Bluetooth LED as a solid red. At
 
 SoftwareSerial bluetoothSerial(10,11); //RX, TX
 
+void setup() 
+{
+	Serial.begin(9600);
+	bluetoothSerial.begin(38400);
+	Serial.println("This is a Bluetooth Module Test");
+}
+
+void loop()
+{
+	if (Serial.available())
+	{
+		bluetoothSerial.write(Serial.read());
+	}
+	if (bluetoothSerial.available())
+	{
+		Serial.write(bluetoothSerial.read());
+	{
+}
+
 ```
 
-Once this code is uploaded to the Arduino, disconnect the Arduino from the computer and connect the battery pack to the Arduino as follows:
+Once this code is uploaded to the Arduino, disconnect the Arduino from the computer and connect the battery pack to the Arduino as seen in Figure 11.
 
 ![image](https://user-images.githubusercontent.com/63273284/227689401-bcab07a8-db35-46ab-bf43-1d0a3acd0104.png)
+
+*Figure 11*
 
 After connecting, the Bluetooth LED should begin blinking again. Follow the aforementioned steps to connect the Bluetooth module to the computer. Once the Bluetooth LED is solid red, open the serial monitor for the appropriate COM port for the Bluetooth connection. This can be found through trial and error of the various COM ports available in the "Port" dropdown menu under "Tools". This step is similar to selecting the appropriate COM port for the Arduino in an earlier step. 
 
@@ -107,32 +128,90 @@ The serial monitor can be opened after selecting the COM port under the "Tools" 
 The initial setup of the Bluetooth module will be tricky; however it is crucial to this project, so ensure that this step is fully complete before moving onto the subsequent steps. EXPLAIN WHY TRICKY
 
 ## Ultrasonic Sensor
-The ultrasonic sensor is how we will be measuring the acceleration of the Arduino apparatus. The output of the ultrasonic sensor is the distance away from a target in front of it after including a calibration factor. The ultrasonic sensor should be electrically connected to the Arduino as follows:
+The ultrasonic sensor is how we will be measuring the acceleration of the Arduino apparatus. The output of the ultrasonic sensor is the distance away from a target in front of it after including a calibration factor. The ultrasonic sensor should be electrically connected to the Arduino as seen in Figure 12.
 
 ![image](https://user-images.githubusercontent.com/63273284/227689758-e9118a27-a5d0-4c22-9e03-f54b6f622cc2.png)
+
+*Figure 12*
 
 After connecting the sensor's echo and trig pins to ports 3 and 2 respectively, we must implement the data reading and output to the serial monitor through the Bluetooth module. The following code should be uploaded to the Arduino to implement the ultrasonic sensor readings to the serial monitor:
 
 Pre-setup:
 
-![image](https://user-images.githubusercontent.com/63273284/227689825-b2973a4e-b794-46b3-bdf7-4eedb824e385.png)
+```C
+
+#include <SoftwareSerial.h>
+
+SoftwareSerial mySerial(10, 11); // RX, TX
+
+// Define the pins of the trigger pins and echo pins 
+const int trigPin = 2;
+const int echoPin = 3;
+
+float duration, cm;
+
+```
 
 Setup:
 
-![image](https://user-images.githubusercontent.com/63273284/227689837-585c5c86-1806-404c-a0d7-d0e93e060d6c.png)
+```C
+
+void setup() 
+{
+  // The trigger pin will output an ultrasonic signal from the speaker
+  pinMode(trigPin, OUTPUT);
+
+  // The echo pin will receive the reflected signal
+  // and input it back to the IDE
+  pinMode(echoPin, INPUT);
+  pinMode(10, INPUT);
+  pinMode(11, OUTPUT);
+  
+   // put your setup code here, to run once:
+  Serial.begin(9600);
+  Serial.println("Hello, Serial ready");
+  mySerial.begin(9600);
+  mySerial.println("Hello, SoftwareSerial ready");
+}
+
+```
+
 
 Loop:
 
-![image](https://user-images.githubusercontent.com/63273284/227689869-e5864968-e3b6-455a-ab12-753775dfcb31.png)
+```C
+
+void loop() 
+{
+  
+  //------- UltraSound -------
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH); //Send pulse
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  duration = pulseIn(echoPin, HIGH); // Recieve pulse
+  cm = (duration/2)*0.0343;
+  delay(1);
+  mySerial.print(millis());
+  mySerial.print(';');
+  mySerial.println(cm); 
+  delay(10); // Delay in between samples
+
+}
+
+```
 
 Note: In this loop, the aforementioned calibration from the raw ultrasonic sensor output to centimeter output is included. 
 
 Connect the Arduino to the computer and upload the code above. 
 
 ## Sending Ultrasonic Sensor Data via Bluetooth
-Now that the ultrasonic sensor and Bluetooth code has been uploaded, disconnect the Arduino from the computer and connect the battery pack to the Arduino. Once again pair the Bluetooth module to the computer as mentioned in earlier steps. Open the serial monitor after choosing the correct COM port. The serial monitor should read the distance values from the ultrasonic sensor in the following format:
+Now that the ultrasonic sensor and Bluetooth code has been uploaded, disconnect the Arduino from the computer and connect the battery pack to the Arduino. Once again pair the Bluetooth module to the computer as mentioned in earlier steps. Open the serial monitor after choosing the correct COM port. The serial monitor should read the distance values from the ultrasonic sensor in the following format seen in Figure 13.
 
 ![image](https://user-images.githubusercontent.com/63273284/227690637-88e927bf-2786-41ea-b346-aac7a5685660.png)
+
+*Figure 13*
 
 The first number in each row is the time in milliseconds since the program began running, and the second number is the calibrated sensor output in centimeters. By moving the ultrasonic sensor back and forth, the second reading should change, and the first reading should increment by 1 each millisecond. If this output has been obtained, then the hardware setup is successful!
 
