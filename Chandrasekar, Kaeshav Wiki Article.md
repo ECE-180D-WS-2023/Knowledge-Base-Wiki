@@ -70,10 +70,10 @@ A successful Bluetooth connection will show the Bluetooth LED as a solid red. At
 ![image](https://user-images.githubusercontent.com/63273284/227655400-5de1ac65-399d-4849-85c2-e1be721e24f7.png)
 
 Once this code is uploaded to the Arduino, disconnect the Arduino from the computer and connect the battery pack to the Arduino as follows:
-*insert photo*
 
-After connecting, the Bluetooth LED should begin blinking again. Follow the aforementioned steps to connect the Bluetooth module to the computer. Once the Bluetooth LED is solid red, open the serial monitor for the appropriate COM port for the Bluetooth connection. This can be found through trial and error of the various COM ports available in the following drop-down menu:
-*insert photo* 
+![image](https://user-images.githubusercontent.com/63273284/227689401-bcab07a8-db35-46ab-bf43-1d0a3acd0104.png)
+
+After connecting, the Bluetooth LED should begin blinking again. Follow the aforementioned steps to connect the Bluetooth module to the computer. Once the Bluetooth LED is solid red, open the serial monitor for the appropriate COM port for the Bluetooth connection. This can be found through trial and error of the various COM ports available in the "Port" dropdown menu under "Tools". 
 
 The output on the serial monitor should be:
 *insert photo*
@@ -82,10 +82,21 @@ The initial setup of the Bluetooth module will be tricky; however it is crucial 
 
 ## Ultrasonic Sensor
 The ultrasonic sensor is how we will be measuring the acceleration of the Arduino apparatus. The output of the ultrasonic sensor is the distance away from a target in front of it after including a calibration factor. The ultrasonic sensor should be electrically connected to the Arduino as follows:
-*insert image*
+
+![image](https://user-images.githubusercontent.com/63273284/227689758-e9118a27-a5d0-4c22-9e03-f54b6f622cc2.png)
 
 After connecting the sensor's echo and trig pins to ports 3 and 2 respectively, we must implement the data reading and output to the serial monitor through the Bluetooth module. The following code should be uploaded to the Arduino to implement the ultrasonic sensor readings to the serial monitor:
-*insert code screenshot*
+
+Pre-setup:
+![image](https://user-images.githubusercontent.com/63273284/227689825-b2973a4e-b794-46b3-bdf7-4eedb824e385.png)
+
+Setup:
+![image](https://user-images.githubusercontent.com/63273284/227689837-585c5c86-1806-404c-a0d7-d0e93e060d6c.png)
+
+Loop:
+![image](https://user-images.githubusercontent.com/63273284/227689869-e5864968-e3b6-455a-ab12-753775dfcb31.png)
+
+Note: In this loop, the aforementioned calibration from the raw ultrasonic sensor output to centimeter output is included. 
 
 Connect the Arduino to the computer and upload the code above. 
 
@@ -109,6 +120,9 @@ Sources:
 -	Arduino and Bluetooth module HC-06 • AranaCorp
 -	Arduino Tutorial - Lesson 3 - Breadboards and LEDs (ladyada.net)
 -	Ultrasonic Sensor HC-SR04 and Arduino - Complete Guide (howtomechatronics.com)
+-	How to run an Arduino (clone) on (AA) batteries for over a year - Part 2 | Hardware Setup (https://hwstartup.wordpress.com/2013/04/15/how-to-run-an-arduino-clone-on-aa-batteries-for-over-a-year-part-2/)
+-	fritzing.org (https://fritzing.org/projects/)
+-	UCLA Physics 4AL
 
 
 
