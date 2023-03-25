@@ -89,13 +89,12 @@ Use the jumper wires to connect the Bluetooth module as seen in Figure 10:
 Once this is properly connected, the red LED on the Bluetooth module should begin blinking. This means that the module is ready to be paired with the computer. Open your computer’s Bluetooth pairing setting and the default name of the device “HC-06” should appear. The password for pairing to this device is “1234”. After it is paired, the red LED should become a solid red light. 
 A successful Bluetooth connection will show the Bluetooth LED as a solid red. At this point, we can upload the following Bluetooth test code to make sure that the module is working as expected. 
  
-````markdown
-```
+``` C
 #include <SoftwareSerial.h>
 
 SoftwareSerial bluetoothSerial(10,11); //RX, TX
+
 ```
-````
 
 Once this code is uploaded to the Arduino, disconnect the Arduino from the computer and connect the battery pack to the Arduino as follows:
 
