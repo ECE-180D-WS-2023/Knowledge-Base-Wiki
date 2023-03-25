@@ -90,7 +90,6 @@ Once this is properly connected, the red LED on the Bluetooth module should begi
 A successful Bluetooth connection will show the Bluetooth LED as a solid red. At this point, we can upload the following Bluetooth test code to make sure that the module is working as expected. 
  
 ````markdown
-```C
 #include <SoftwareSerial.h>
 
 SoftwareSerial bluetoothSerial(10,11); //RX, TX
