@@ -322,13 +322,13 @@ Note: Allow permission for the notebook to mount your Google Drive.
 
 Run the code by pressing the button on the left of the cell, pictured in Figure 16. 
 
-![image](https://user-images.githubusercontent.com/63273284/227700964-3a3a7b19-78ac-41a9-b6ab-5f4b5b1834e0.png)
+![image](https://user-images.githubusercontent.com/63273284/227701690-f558f959-8504-4eda-a3ff-ff2b67b77966.png)
 
 *Figure 16*
 
 
 ## Conclusion
-*insert conclusion* 
+In this tutorial, we have been able to setup an Arduino with Bluetooth to read ultrasonic sensor data remotely. With a simple experiment and some data analysis, we were able to determine the acceleration of gravity. From this, we can see that the Arduino is a powerful tool that can be used for more experiments to verify laws of nature using simple sensors. 
 
 
 Sources:
