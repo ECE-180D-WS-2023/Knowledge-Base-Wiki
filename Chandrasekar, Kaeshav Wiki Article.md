@@ -12,7 +12,8 @@ a.	Arduino programming cable
 4.	Jumper wires
 5.	Arduino Prototyping Shield with Tiny Breadboard
 6.	Computer with Bluetooth capability
-7.      4x AA Battery pack
+7.	4x AA Battery Pack
+
 	
  
 ## Getting Started
