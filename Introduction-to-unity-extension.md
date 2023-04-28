@@ -72,15 +72,42 @@ public class RotateSphere : MonoBehaviour
 }
 ````
 
----
-## Augmented/Virtual Reality in Unity!
-Apart from the games we usually see, Unity takes it to the next level and allowes creators to develop Augemented and Virtual Reality applications 
-with the same format. As long as you know how to use Unity to create normal games, you already know how to create application in AR/VR with Unity --
-You don't need to learn anything new to do so!
-
 • **Play the game:** To play the game and see the sphere rotate, you can press the Play
 button in the Unity Editor. You can also stop the game by pressing the Play button again.
 This is just a basic tutorial to get started with Unity. Now lets see a more game-like example.
+
+---
+## Augmented/Virtual Reality in Unity!
+Apart from the games we usually see, Unity takes it to the next level and allows creators to develop Augmented and Virtual Reality applications 
+with the same format. As long as you know how to use Unity to create normal games, you already know how to create applications in AR/VR --
+You don't need to learn anything new to do so!
+
+"Unity provides powerful tools to make rich, deeply engaging augmented reality experiences that intelligently interact with the real world" [4]. 
+With tools such as AR Foundation and XR Interaction Toolking, as well as abilities to use Unity as a library, the user has enormous power in bringing
+their dream into reality (or at least augmented or virtual haha).
+
+### What is AR Foundation
+As a programmer, good coding style dictates that if something is to be used over and over again that we don't copy and paste the same code. What we do instead is to create a class or function and simply do a call to reuse that code. This is the premise of AR Foundation.
+
+AR foundation is a framework purposely built for AR development. As a developer, we only need to create our application once and we can deploy it across multiple platforms (Apple, Android, etc). This framework gives extra features such as photorealistic rendering, physics, device optimizations, and more! [5]
+
+Here are some features that AR Foundation provides right out-of-the-box:
+
+![image](https://user-images.githubusercontent.com/66290894/235254762-6f240e88-75ee-4b92-8809-17e50642a415.png)
+
+In the picture above, ARCore refers to Apple and ARKit refers to Android. Remember that I said we can create application for both Apple and Android? Unity takes care of the hassle and translates your Unity project into the corresponding framework necessary for it to run on whatever platform you choose.
+
+Click [here](https://github.com/Unity-Technologies/arfoundation-samples) for examples on how to use AR Foundations and it's features.
+
+### What is XR Interaction Toolkit
+Sure we can place objects into our scene but without interactivity our application is boring. Boo!
+
+With the XR Interaction Toolkit we can add interactivity to our applications by simple dragging and dropping components into place. Did you catch that? We don't need to code our interactions from scratch, saving us time and effort! [4]
+
+The toolkit provides features such as selecting, grabbing, throwing, and many more within AR and VR scenes.
+
+Click [here](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@latest) for documentation and [here](https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples) for examples on how to use XR Interaction Toolkit and it's features.
+
 
 
 ## Work Cited
@@ -89,3 +116,11 @@ https://gamedevacademy.org/what-is-unity/
 https://www.youtube.com/watch?v=pwZpJzpE2lQ&t=6333s
 
 https://unity.com/
+
+[4] https://unity.com/unity/features/ar
+
+[5] https://unity.com/unity/features/arfoundation
+
+[6] https://blog.unity.com/technology/xr-interaction-toolkit-preview-package-is-here
+
+[7] 
