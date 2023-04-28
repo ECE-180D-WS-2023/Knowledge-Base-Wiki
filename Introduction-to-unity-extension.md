@@ -77,7 +77,8 @@ button in the Unity Editor. You can also stop the game by pressing the Play butt
 This is just a basic tutorial to get started with Unity. Now lets see a more game-like example.
 
 ---
-## Augmented/Virtual Reality in Unity!
+
+## Augmented/Virtual Reality in Unity! - By: Warren Pagsuguiron
 Apart from the games we usually see, Unity takes it to the next level and allows creators to develop Augmented and Virtual Reality applications 
 with the same format. As long as you know how to use Unity to create normal games, you already know how to create applications in AR/VR --
 You don't need to learn anything new to do so!
@@ -108,7 +109,17 @@ The toolkit provides features such as selecting, grabbing, throwing, and many mo
 
 Click [here](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@latest) for documentation and [here](https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples) for examples on how to use XR Interaction Toolkit and it's features.
 
+### What is Using Unity as a Library
+Unity has a steep learning curve, but once you know how to use Unity to create an application, you already know how to use all the features that Unity provides and will provide. Say you already have an existing application, "instead of rebuilding your app to add AR functionality, you can use all of Unity's AR offerings by simply embedding it" [4].
 
+This isn't simply for AR/VR, Unity allows you to tack on extra features to your mobile-apps such as 3D/2D real-time rendering, 2D mini-games, and more. By simply loading, activating, and unloading runtime libraries within the native application, you are able to control what to offer in your game.
+
+Click [here](https://docs.unity3d.com/2019.3/Documentation/Manual/UnityasaLibrary.html?_ga=2.140445107.1648261134.1682715339-2111513804.1666742916) for documentation.
+
+### Snapping Back to Reality
+Unity is an amazing tool that provides reach features for developers. Whatever it is you want to create, you can bet Unity offers it one-way or another. With it's native tools or asset store, the skies the limit when it comes to what you can create.
+
+---
 
 ## Work Cited
 https://gamedevacademy.org/what-is-unity/
@@ -123,4 +134,4 @@ https://unity.com/
 
 [6] https://blog.unity.com/technology/xr-interaction-toolkit-preview-package-is-here
 
-[7] 
+[7] https://unity.com/features/unity-as-a-library
