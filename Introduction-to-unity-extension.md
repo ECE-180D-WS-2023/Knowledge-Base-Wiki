@@ -119,7 +119,7 @@ This isn't simply for AR/VR, Unity allows you to tack on extra features to your 
 Click [here](https://docs.unity3d.com/2019.3/Documentation/Manual/UnityasaLibrary.html?_ga=2.140445107.1648261134.1682715339-2111513804.1666742916) for documentation.
 
 ### Conclusion
-Unity is an amazing tool that provides rich features for all types of developers making it one of the global leaders in game engines. Yes, it has its disadvantages in performance and memory but as technology continues to progess we see that we have more powerful CPUs, GPUs, and higher availabity of RAM. Because of this, Unity will be able to pull a Beyonce and say "I break the internet, top two and I ain't number two."
+Unity is an amazing tool that provides rich features for all types of developers making it one of the global leaders in game engines. Yes, it has its disadvantages in performance and memory but as technology continues to progess we see that we have more powerful CPUs, GPUs, and higher availabity of RAM. Soon enough these disadvantages will no longer hinder the platform and because of this, Unity will be able to pull a Beyonce and say "I break the internet, top two and I ain't number two."
 
 Whatever it is you want to create (a game, augmented, or virtualy reality application), you can bet Unity offers it one-way or another. With it's native tools or asset store, the skies the limit when it comes to what you can create.
 
