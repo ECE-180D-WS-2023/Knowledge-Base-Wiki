@@ -1,12 +1,14 @@
 By: George Beltran
 ## Introduction 
-Unity is a cross platform game engine with which more than 50% of the world's games were developed. It is used to develop video games for PC, consoles, mobile devices, and
+Unity is a cross platform game engine which more than 50% of the world's games were developed. It is used to develop video games for PC, consoles, mobile devices, and
 websites. Unity provides a user-friendly development environment for creating
 2D and 3D games, with a drag-and-drop interface for adding objects, materials, and animations.
 It also includes a scripting API in C#, which enables developers to add complex game logic and
 behavior. In addition, Unity supports a large community of asset creators and developers,
 allowing users to easily find and incorporate 3D models, sound effects, and
-animations, into their games. Whether you are a seasoned game developer or just starting out,
+animations, into their games. Unity is so powerful that it also enables users to create Augmented Reality and Virtual Reality applications with the same principles as creating a normal Unity game.
+
+Whether you are a seasoned developer or just starting out,
 Unity offers a powerful and flexible platform for creating games that can run on a variety of
 platforms, including Windows, macOS, Linux, Android, iOS, and WebGL.
 
@@ -80,15 +82,15 @@ This is just a basic tutorial to get started with Unity. Now lets see a more gam
 
 ## Augmented/Virtual Reality in Unity! - By: Warren Pagsuguiron
 Apart from the games we usually see, Unity takes it to the next level and allows creators to develop Augmented and Virtual Reality applications 
-with the same format. As long as you know how to use Unity to create normal games, you already know how to create applications in AR/VR --
+with the same format. As long as you know how to use Unity to create normal games, you already know how to create applications in AR/VR -
 You don't need to learn anything new to do so!
 
 "Unity provides powerful tools to make rich, deeply engaging augmented reality experiences that intelligently interact with the real world" [4]. 
-With tools such as AR Foundation and XR Interaction Toolking, as well as abilities to use Unity as a library, the user has enormous power in bringing
-their dream into reality (or at least augmented or virtual haha).
+With tools such as AR Foundation and XR Interaction Toolkit, as well as abilities to use Unity as a library, the user has enormous power in bringing
+their dreams into reality (or at least augmented or virtual haha).
 
 ### What is AR Foundation
-As a programmer, good coding style dictates that if something is to be used over and over again that we don't copy and paste the same code. What we do instead is to create a class or function and simply do a call to reuse that code. This is the premise of AR Foundation.
+As a programmer, good coding style dictates that if something is to be used over and over again that we don't copy and paste the same code over and over again. What we do instead is to create a class or function and simply peform a call to reuse that code. This is the premise of AR Foundation.
 
 AR foundation is a framework purposely built for AR development. As a developer, we only need to create our application once and we can deploy it across multiple platforms (Apple, Android, etc). This framework gives extra features such as photorealistic rendering, physics, device optimizations, and more! [5]
 
@@ -96,7 +98,7 @@ Here are some features that AR Foundation provides right out-of-the-box:
 
 ![image](https://user-images.githubusercontent.com/66290894/235254762-6f240e88-75ee-4b92-8809-17e50642a415.png)
 
-In the picture above, ARCore refers to Apple and ARKit refers to Android. Remember that I said we can create application for both Apple and Android? Unity takes care of the hassle and translates your Unity project into the corresponding framework necessary for it to run on whatever platform you choose.
+In the picture above, ARCore refers to Apple and ARKit refers to Android. Remember when I said we can create application for both Apple and Android? Unity takes care of the hassle and translates your Unity project into the corresponding framework necessary for it to run on whatever platform you choose.
 
 Click [here](https://github.com/Unity-Technologies/arfoundation-samples) for examples on how to use AR Foundations and it's features.
 
@@ -116,8 +118,10 @@ This isn't simply for AR/VR, Unity allows you to tack on extra features to your 
 
 Click [here](https://docs.unity3d.com/2019.3/Documentation/Manual/UnityasaLibrary.html?_ga=2.140445107.1648261134.1682715339-2111513804.1666742916) for documentation.
 
-### Snapping Back to Reality
-Unity is an amazing tool that provides reach features for developers. Whatever it is you want to create, you can bet Unity offers it one-way or another. With it's native tools or asset store, the skies the limit when it comes to what you can create.
+### Conclusion
+Unity is an amazing tool that provides rich features for all types of developers making it one of the global leaders in game engines. Yes, it has its disadvantages in performance and memory but as technology continues to progess we see that we have more powerful CPUs, GPUs, and higher availabity of RAM. Because of this, Unity will be able to pull a Beyonce and say "I break the internet, top two and I ain't number two."
+
+Whatever it is you want to create (a game, augmented, or virtualy reality application), you can bet Unity offers it one-way or another. With it's native tools or asset store, the skies the limit when it comes to what you can create.
 
 ---
 
